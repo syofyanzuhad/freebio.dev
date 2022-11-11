@@ -12,64 +12,64 @@ import {
 } from "react-icons/ri";
 
 interface ITextLink extends Pick<LinkProps, "href"> {
-    icon: string;
+    key: string;
     href: string;
 }
 
-const SocialLink = ({ href, icon }: ITextLink) => {
+const SocialLink = ({ href, key }: ITextLink) => {
 	return (
         <Link href={href} passHref>
             <a target="_blank">
-                {/* switch dynamic icon */}
-                {icon === "fb" && (
+                {/* switch dynamic key */}
+                {key === "fb" && (
                     <RiFacebookCircleFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
                 )}
-                {icon === "yt" && (
+                {key === "yt" && (
                     <RiYoutubeFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
                 )}
-                {icon === "ig" && (
+                {key === "ig" && (
                     <RiInstagramFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
                 )}
-                {icon === "tw" && (
+                {key === "tw" && (
                     <RiTwitterFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
                 )}
-                {icon === "gh" && (
+                {key === "gh" && (
                     <RiGithubFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
                 )}
-                {icon === "li" && (
+                {key === "li" && (
                     <RiLinkedinFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
                 )}
-                {icon === "tg" && (
+                {key === "tg" && (
                     <RiTelegramFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
                 )}
-                {icon === "wa" && (
+                {key === "wa" && (
                     <RiWhatsappFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
                 )}
-                {icon === "dc" && (
+                {key === "dc" && (
                     <RiDiscordFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
