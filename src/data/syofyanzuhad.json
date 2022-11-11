@@ -28,10 +28,12 @@
 	],
 	"links": [
 		{
+			"id": "wp",
 			"href": "https://syofyan-profile.vercel.app/",
 			"title": "Web Profile"
 		},
 		{
+			"id": "gh",
 			"href": "https://github.com/syofyanzuhad",
 			"title": "Check out me on Github"
 		}
