@@ -1,0 +1,41 @@
+{
+	"username": "mhafif",
+	"name": "Syofyan Zuhad",
+	"bio": "Web Artisan",
+	"description": "Syofyan Zuhad - Software Engineer",
+	"avatar_url": "https://github.com/syofyanzuhad.png",
+	"socials": [
+		{
+			"name": "twitter",
+			"href": "https://twitter.com/syofyan_zuhad",
+			"icon": "tw"
+		},
+		{
+			"name": "instagram",
+			"href": "https://www.instagram.com/syofyan_zuhad",
+			"icon": "ig"
+		},
+		{
+			"name": "linkedin",
+			"href": "https://www.linkedin.com/in/syofyan-zuhad",
+			"icon": "li"
+		},
+		{
+			"name": "telegram",
+			"href": "https://t.me/syofyan_zuhad",
+			"icon": "tg"
+		}
+	],
+	"links": [
+		{
+			"id": "wp",
+			"href": "https://syofyan-profile.vercel.app/",
+			"title": "Web Profile"
+		},
+		{
+			"id": "gh",
+			"href": "https://github.com/syofyanzuhad",
+			"title": "Check out me on Github"
+		}
+	]
+}
