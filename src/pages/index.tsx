@@ -31,12 +31,12 @@ const Home: NextPage = () => {
       <main className={container}>
         <section className="flex flex-col items-center pt-16">
           <div>
-            <Avatar url={imgURL} alt="" />
+            <Avatar url={imgURL} alt="avatar" />
           </div>
           <h1 className="uppercase tracking-wide">{name}</h1>
           <div className="flex gap-2 mt-2 items-center">
             {userData.socials?.map(({ icon, href }) => (
-              <SocialLink key={icon} href={href} />
+              <SocialLink key={icon} icon={icon} href={href} />
             ))}
           </div>
         </section>

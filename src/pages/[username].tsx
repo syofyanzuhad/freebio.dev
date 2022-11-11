@@ -33,7 +33,7 @@ export default function UserBio({ user }: any) {
           <h1 className="uppercase tracking-wide">{name}</h1>
           <div className="flex gap-2 mt-2 items-center">
             {socials?.map(({ icon, href }: any) => (
-              <SocialLink key={icon} href={href} />
+              <SocialLink key={icon} icon={icon} href={href} />
             ))}
           </div>
         </section>
