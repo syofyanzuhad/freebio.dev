@@ -1,4 +1,3 @@
-import fs from "fs";
 import Head from "next/head";
 import Avatar from "../components/Avatar";
 import Image from "next/image";
@@ -34,13 +33,13 @@ export default function UserBio({ user }: any) {
           <h1 className="uppercase tracking-wide">{name}</h1>
           <div className="flex gap-2 mt-2 items-center">
             {socials?.map(({ icon, href }: any) => (
-              <SocialLink icon={icon} href={href} />
+              <SocialLink key={icon} href={href} />
             ))}
           </div>
         </section>
         <section className="flex flex-col items-center my-8">
-          {links?.map(({ title, href }: any) => (
-            <TextLink title={title} href={href} />
+          {links?.map(({ id, title, href }: any) => (
+            <TextLink key={id} title={title} href={href} />
           ))}
         </section>
       </main>

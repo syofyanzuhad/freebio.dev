@@ -5,17 +5,13 @@ import Image from "next/image";
 import TextLink from "../components/TextLink";
 import SocialLink from "../components/SocialLink";
 import Link from "next/link";
-import userData from "../data/syofyanzuhad.json";
+import userData from "../data/default.json";
 
 const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 
 const name = userData.name;
 const imgURL = userData.avatar_url;
 const description = userData.description;
-
-// const getLinkById = (id: string) => {
-//   	return userData?.links.find(({ id: itemId }) => itemId === id)?.href ?? "";
-// };
 
 const Home: NextPage = () => {
   return (
@@ -39,14 +35,14 @@ const Home: NextPage = () => {
           </div>
           <h1 className="uppercase tracking-wide">{name}</h1>
           <div className="flex gap-2 mt-2 items-center">
-            {userData.socials?.map(({ id, ...rest }) => (
-              <SocialLink key={id} {...rest} />
+            {userData.socials?.map(({ icon, href }) => (
+              <SocialLink key={icon} href={href} />
             ))}
           </div>
         </section>
         <section className="flex flex-col items-center my-8">
-          {userData.links?.map(({ id, ...rest }) => (
-            <TextLink key={id} {...rest} />
+          {userData.links?.map(({ id, title, href }) => (
+            <TextLink key={id} title={title} href={href} />
           ))}
         </section>
       </main>
