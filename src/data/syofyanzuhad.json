@@ -28,14 +28,24 @@
 	],
 	"links": [
 		{
-			"id": "wp",
+			"id": 1,
 			"href": "https://syofyan-profile.vercel.app/",
 			"title": "Web Profile"
 		},
 		{
-			"id": "gh",
+			"id": 2,
 			"href": "https://github.com/syofyanzuhad",
-			"title": "Check out me on Github"
+			"title": "Check me on Github"
+		},
+		{
+			"id": 3,
+			"href": "https://syofyanzuhad.medium.com/",
+			"title": "Read my blog"
+		},
+		{
+			"id": 4,
+			"href": "https://www.buymeacoffee.com/syofyanzuhad",
+			"title": "Buy me a coffee"
 		}
 	]
 }
