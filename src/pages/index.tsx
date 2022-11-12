@@ -12,6 +12,8 @@ const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 const name = userData.name;
 const imgURL = userData.avatar_url;
 const description = userData.description;
+const bio = userData.bio;
+// console.log(userData);
 
 const Home: NextPage = () => {
   return (
@@ -34,6 +36,7 @@ const Home: NextPage = () => {
             <Avatar url={imgURL} alt="avatar" />
           </div>
           <h1 className="uppercase tracking-wide">{name}</h1>
+          <p>{bio}</p>
           <div className="flex gap-2 mt-2 items-center">
             {userData.socials?.map(({ icon, href }) => (
               <SocialLink key={icon} icon={icon} href={href} />

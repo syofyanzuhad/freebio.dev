@@ -7,7 +7,8 @@ import Link from "next/link";
 import { getAllUsers, getByUsername } from "../utils/api";
 
 export default function UserBio({ user }: any) {
-  const { name, avatar_url, description, socials, links } = user;
+  const { name, avatar_url, bio, description, socials, links } = user;
+  console.log(user);
 
   const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 
@@ -31,6 +32,7 @@ export default function UserBio({ user }: any) {
             <Avatar url={avatar_url} alt="avatar" />
           </div>
           <h1 className="uppercase tracking-wide">{name}</h1>
+          <p>{bio}</p>
           <div className="flex gap-2 mt-2 items-center">
             {socials?.map(({ icon, href }: any) => (
               <SocialLink key={icon} icon={icon} href={href} />
@@ -69,6 +71,7 @@ export async function getStaticProps({ params }: any) {
   const user = getByUsername(params.username, [
     "username",
     "name",
+    "bio",
     "description",
     "avatar_url",
     "socials",
