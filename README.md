@@ -1,13 +1,17 @@
 Demo:
 
-<img width="316" alt="Screenshot 2022-08-07 at 3 03 22 AM" src="https://user-images.githubusercontent.com/15128569/183266720-97f57631-4549-4a36-987d-48462fcaa92a.png">
+<img width="316" alt="Screenshot 2022-08-07 at 3 03 22 AM" src="https://raw.githubusercontent.com/syofyanzuhad/freebio.dev/main/public/example.jpg?token=GHSAT0AAAAAABZTHWUUG3GU7FPF7IGRZOAKY3RCWZA">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+- First, clone it:
+```bash
+git clone https://github.com/syofyanzuhad/freebio.dev.git
+```
 
+- Then, run it locally:
 ```bash
 npm run dev
 # or
@@ -16,11 +20,12 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+You can start add your data by copy the `data/[username].json`. The page auto-updates as you edit the file.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+
+- Finally, send it as Pull-request to the main repo.
 
 ## Learn More
 
