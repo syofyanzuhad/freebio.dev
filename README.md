@@ -1,3 +1,29 @@
+<p align='center'>
+	<img src="https://img.shields.io/badge/hacktoberfest-2022-blueviolet" alt="Hacktober Badge"/>
+  <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+ 	<a href="https://github.com/keshavsingh4522" >
+		<img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" />
+	</a>
+</p>
+
+<p align='center'>
+  <a href='https://github.com/syofyanzuhad/freebio.dev'>
+	  <img src='https://visitor-badge.glitch.me/badge?page_id=syofyanzuhad.freebio.dev'>
+	</a>
+	<a href="https://github.com/syofyanzuhad/freebio.dev/pulls">
+		<img src="https://img.shields.io/github/issues-pr/syofyanzuhad/freebio.dev" alt="Pull Requests Badge"/>
+	</a>
+  <a href="https://github.com/syofyanzuhad/freebio.dev/graphs/contributors">
+		<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/syofyanzuhad/freebio.dev?color=2b9348">
+	</a>
+  <a href='https://github.com/syofyanzuhad/freebio.dev'>
+		<img src='https://img.shields.io/github/forks/syofyanzuhad/freebio.dev'>
+	</a>
+  <a href='https://github.com/syofyanzuhad/freebio.dev'>
+		<img src='https://img.shields.io/github/stars/syofyanzuhad/freebio.dev'>
+	</a>
+</p>
+
 Demo:
 
 <img width="316" alt="Screenshot 2022-08-07 at 3 03 22 AM" src="https://raw.githubusercontent.com/syofyanzuhad/freebio.dev/main/public/example.jpg?token=GHSAT0AAAAAABZTHWUUG3GU7FPF7IGRZOAKY3RCWZA">
