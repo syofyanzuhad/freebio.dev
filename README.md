@@ -6,12 +6,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-- First, clone it:
+### 1. **First, clone it:**
 ```bash
 git clone https://github.com/syofyanzuhad/freebio.dev.git
 ```
 
-- Then, run it locally:
+### 2. **Then, run it locally:**
 ```bash
 npm run dev
 # or
@@ -27,7 +27,7 @@ You can check your bio link page by accessing [http://localhost:3000/username](h
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 
-- Finally, send it as Pull-request to the main repo.
+### 3. **Finally, send it as Pull-request to the main repo.**
 
 ## Learn More
 
