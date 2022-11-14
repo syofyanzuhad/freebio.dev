@@ -56,60 +56,60 @@ You can start add your data by copy the `data/default.json` and edit it to `data
 Sample json format on [default.json](https://github.com/syofyanzuhad/freebio.dev/blob/main/src/data/default.json):
 ```json
 {
-	"username": "default",
-	"name": "Syofyan Zuhad",
-	"bio": "Web Artisan",
-	"description": "Syofyan Zuhad - Software Engineer",
-	"avatar_url": "https://github.com/syofyanzuhad.png",
-	"socials": [
-		{
-			"name": "twitter",
-			"href": "https://twitter.com/syofyan_zuhad",
-			"icon": "tw"
-		},
-		{
-			"name": "instagram",
-			"href": "https://www.instagram.com/syofyan_zuhad",
-			"icon": "ig"
-		},
-		{
-			"name": "linkedin",
-			"href": "https://www.linkedin.com/in/syofyan-zuhad",
-			"icon": "li"
-		},
-		{
-			"name": "telegram",
-			"href": "https://t.me/syofyan_zuhad",
-			"icon": "tg"
-		}
-	],
-	"links": [
-		{
-			"id": 1,
-			"href": "https://github.com/syofyanzuhad/freebio.dev",
-			"title": "Make your own bio"
-		},
-		{
-			"id": 2,
-			"href": "https://github.com/syofyanzuhad",
-			"title": "Check me on Github"
-		},
-		{
-			"id": 3,
-			"href": "https://www.buymeacoffee.com/syofyanzuhad",
-			"title": "Buy me a coffee"
-		},
-		{
-			"id": 4,
-			"href": "https://trakteer.id/syofyanzuhad/tip",
-			"title": "Trakteer me"
-		},
-		{
-			"id": 5,
-			"href": "/donate",
-			"title": "Donate"
-		}
-	]
+  "username": "default",
+  "name": "Syofyan Zuhad",
+  "bio": "Web Artisan",
+  "description": "Syofyan Zuhad - Software Engineer",
+  "avatar_url": "https://github.com/syofyanzuhad.png",
+  "socials": [
+    {
+      "name": "twitter",
+      "href": "https://twitter.com/syofyan_zuhad",
+      "icon": "tw"
+    },
+    {
+      "name": "instagram",
+      "href": "https://www.instagram.com/syofyan_zuhad",
+      "icon": "ig"
+    },
+    {
+      "name": "linkedin",
+      "href": "https://www.linkedin.com/in/syofyan-zuhad",
+      "icon": "li"
+    },
+    {
+      "name": "telegram",
+      "href": "https://t.me/syofyan_zuhad",
+      "icon": "tg"
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "href": "https://github.com/syofyanzuhad/freebio.dev",
+      "title": "Make your own bio"
+    },
+    {
+      "id": 2,
+      "href": "https://github.com/syofyanzuhad",
+      "title": "Check me on Github"
+    },
+    {
+      "id": 3,
+      "href": "https://www.buymeacoffee.com/syofyanzuhad",
+      "title": "Buy me a coffee"
+    },
+    {
+      "id": 4,
+      "href": "https://trakteer.id/syofyanzuhad/tip",
+      "title": "Trakteer me"
+    },
+    {
+      "id": 5,
+      "href": "/donate",
+      "title": "Donate"
+    }
+  ]
 }
 ```
 
