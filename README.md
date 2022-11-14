@@ -24,9 +24,14 @@
 	</a>
 </p>
 
-Demo:
+**Demo:**
 
 <img width="316" alt="Screenshot 2022-08-07 at 3 03 22 AM" src="https://raw.githubusercontent.com/syofyanzuhad/freebio.dev/main/public/example.jpg?token=GHSAT0AAAAAABZTHWUUG3GU7FPF7IGRZOAKY3RCWZA">
+
+
+**Performance:**
+
+<img width="916" alt="Screenshot 2022-08-07 at 3 03 22 AM" src="https://raw.githubusercontent.com/syofyanzuhad/freebio.dev/main/public/Screenshot%20from%202022-11-14%2010-36-38.png">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
