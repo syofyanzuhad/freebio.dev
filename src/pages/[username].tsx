@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from "../components/Head";
 import Avatar from "../components/Avatar";
 import Image from "next/image";
 import TextLink from "../components/TextLink";
@@ -14,17 +14,13 @@ export default function UserBio({ user }: any) {
 
   return (
     <div className="bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/neon.jpeg')] h-full min-h-screen text-[#CEEDFF]">
-      <Head>
-        <title>{name} | Bio Link</title>
-        <meta name="description" content={`${description} | Free Bio Link`} />
-        <meta
-          name="keywords"
-          content={`Freebio, ${name.split("")[0]}, ${name}, Instagram`}
-        />
-        <meta name="author" content={name} />
-        <meta property="og:image" content={avatar_url} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Head
+        title={`${name} | Bio Link`}
+        description={`${description} | Free Bio Link`}
+        keywords={`Freebio, ${name.split("")[0]}, ${name}, Instagram`}
+        author={name}
+        image={avatar_url}
+      />
 
       <main className={container}>
         <section className="flex flex-col items-center pt-16">

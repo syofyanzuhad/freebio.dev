@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import Head from "../components/Head";
 import Avatar from "../components/Avatar";
 import Image from "next/image";
 import TextLink from "../components/TextLink";
@@ -10,41 +10,39 @@ import userData from "../data/default.json";
 const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 
 const name = userData.name;
-const imgURL = userData.avatar_url;
+const avatar_url = userData.avatar_url;
 const description = userData.description;
 const bio = userData.bio;
+const socials = userData.socials;
+const links = userData.links;
 // console.log(userData);
 
 const Home: NextPage = () => {
   return (
     <div className="bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/neon.jpeg')] h-full min-h-screen text-[#CEEDFF]">
-      <Head>
-        <title>{name} | Bio Link</title>
-        <meta name="description" content={`${description} | Free Bio Link`} />
-        <meta
-          name="keywords"
-          content={`Freebio, ${name.split("")[0]}, ${name}, Instagram`}
-        />
-        <meta name="author" content={name} />
-        <meta property="og:image" content={imgURL} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Head
+        title={`${name} | Bio Link`}
+        description={`${description} | Free Bio Link`}
+        keywords={`Freebio, ${name.split("")[0]}, ${name}, Instagram`}
+        author={name}
+        image={avatar_url}
+      />
 
       <main className={container}>
         <section className="flex flex-col items-center pt-16">
           <div>
-            <Avatar url={imgURL} alt="avatar" />
+            <Avatar url={avatar_url} alt="avatar" />
           </div>
           <h1 className="uppercase tracking-wide">{name}</h1>
           <p>{bio}</p>
           <div className="flex gap-2 mt-2 items-center">
-            {userData.socials?.map(({ icon, href }) => (
+            {socials?.map(({ icon, href }) => (
               <SocialLink key={icon} icon={icon} href={href} />
             ))}
           </div>
         </section>
         <section className="flex flex-col items-center my-8">
-          {userData.links?.map(({ id, title, href }) => (
+          {links?.map(({ id, title, href }) => (
             <TextLink key={id} title={title} href={href} />
           ))}
         </section>
