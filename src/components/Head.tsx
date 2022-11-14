@@ -21,7 +21,7 @@ const Avatar = ({
       <meta name="author" content={author} />
       <meta property="og:image" content={image} />
       <link rel="icon" href="/favicon.ico" />
-      <script async src="https://cdn.splitbee.io/sb.js"></script>
+      <script src="https://cdn.splitbee.io/sb.js"></script>
     </Head>
   );
 };
