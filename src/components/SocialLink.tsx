@@ -20,7 +20,7 @@ interface ITextLink extends Pick<LinkProps, "href"> {
 const SocialLink = ({ href, key, icon }: ITextLink) => {
 	return (
         <Link href={href} passHref>
-            <a target="_blank">
+            <a target="_blank" aria-label="social-link" rel="noreferrer">
                 {/* switch dynamic key */}
                 {icon === "fb" && (
                     <RiFacebookCircleFill
