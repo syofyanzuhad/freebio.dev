@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           <div>
             <Avatar url={avatar_url} alt="avatar" />
           </div>
-          <h1 className="uppercase tracking-wide">{name}</h1>
+          <h1 className="uppercase tracking-wide font-bold">{name}</h1>
           <p>{bio}</p>
           <div className="flex gap-2 mt-2 items-center">
             {socials?.map(({ icon, href }) => (
