@@ -1,9 +1,9 @@
 {
 	"username": "donate",
-	"name": "Donate me",
-	"bio": "Web Artisan",
-	"description": "Syofyan Zuhad - Software Engineer",
-	"avatar_url": "https://github.com/syofyanzuhad.png",
+	"name": "Freebio Dev",
+	"bio": "FREE Bio for Developer",
+	"description": "FREE Bio for Developer",
+	"avatar_url": "/bio-512x512.png",
 	"socials": [
 		{
 			"name": "twitter",
@@ -24,6 +24,11 @@
 			"name": "telegram",
 			"href": "https://t.me/syofyan_zuhad",
 			"icon": "tg"
+		},
+		{
+			"name": "mail",
+			"href": "mailto:syofyan@freebio.dev",
+			"icon": "mail"
 		}
 	],
 	"links": [
