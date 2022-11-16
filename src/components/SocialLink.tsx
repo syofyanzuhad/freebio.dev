@@ -9,6 +9,7 @@ import {
     RiTelegramFill,
     RiWhatsappFill,
     RiDiscordFill,
+    RiMailFill,
 } from "react-icons/ri";
 
 interface ITextLink extends Pick<LinkProps, "href"> {
@@ -72,6 +73,12 @@ const SocialLink = ({ href, key, icon }: ITextLink) => {
                 )}
                 {icon === "dc" && (
                     <RiDiscordFill
+                        className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
+                        size="1.75rem"
+                    />
+                )}
+                {icon === "mail" && (
+                    <RiMailFill
                         className="cursor-pointer hover:-translate-y-0 hover:scale-125 duration-700 ease-in-out"
                         size="1.75rem"
                     />
