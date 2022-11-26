@@ -37,6 +37,8 @@
 
 **Visitor stats: [Visitor](https://app.splitbee.io/public/freebio.dev)**
 
+![Screenshot from 2022-11-26 20-48-24](https://user-images.githubusercontent.com/52684582/204092131-55b388ba-5e52-437d-b8ab-df6873b818aa.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
