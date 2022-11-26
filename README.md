@@ -42,11 +42,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 git clone https://github.com/syofyanzuhad/freebio.dev.git
 ```
 
-### 2. **Then, run it locally:**
+### 2. **Then, install and run it locally:**
 ```bash
-npm run dev
+npm install && npm run dev
 # or
-yarn dev
+yarn && yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
