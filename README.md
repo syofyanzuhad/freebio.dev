@@ -29,8 +29,8 @@
 <img width="316" alt="Screenshot 2022-08-07 at 3 03 22 AM" src="https://raw.githubusercontent.com/syofyanzuhad/freebio.dev/main/public/example.jpg?token=GHSAT0AAAAAABZTHWUUG3GU7FPF7IGRZOAKY3RCWZA">
 
 
-**Awesome Performance:**
-
+**⚡️ Awesome Performance:**
+- Pagespeed [insight](https://pagespeed.web.dev/report?url=https%3A%2F%2Ffreebio.dev%2F)
 <img width="916" alt="Screenshot 2022-08-07 at 3 03 22 AM" src="https://raw.githubusercontent.com/syofyanzuhad/freebio.dev/main/public/Screenshot%20from%202022-11-14%2010-36-38.png">
 
 **DEV Domain: [freebio.dev](//freebio.dev)**
