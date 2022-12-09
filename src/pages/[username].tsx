@@ -6,7 +6,7 @@ import SocialLink from "../components/SocialLink";
 import { getAllUsers, getByUsername } from "../utils/api";
 
 export default function UserBio({ user }: any) {
-  const { name, avatar_url, bio, description, socials, links } = user;
+  const { username, name, avatar_url, bio, description, socials, links } = user;
   console.log(user);
 
   const container = "md:container md:mx-auto lg:max-w-4xl px-4";
@@ -29,6 +29,7 @@ export default function UserBio({ user }: any) {
           <h1 className="uppercase tracking-wide font-bold">{name}</h1>
           <p>{bio}</p>
           <div className="flex gap-2 mt-2 items-center">
+            <SocialLink key="gh" icon="gh" href={`//github.com/${username}`} />
             {socials?.map(({ icon, href }: any) => (
               <SocialLink key={icon} icon={icon} href={href} />
             ))}
