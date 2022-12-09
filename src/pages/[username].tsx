@@ -29,7 +29,7 @@ export default function UserBio({ user }: any) {
           <h1 className="uppercase tracking-wide font-bold">{name}</h1>
           <p>{bio}</p>
           <div className="flex gap-2 mt-2 items-center">
-            <SocialLink key="gh" icon="gh" href={`//github.com/${username}`} />
+            <SocialLink key="gh" icon="gh" href={`https://github.com/${username}`} />
             {socials?.map(({ icon, href }: any) => (
               <SocialLink key={icon} icon={icon} href={href} />
             ))}
