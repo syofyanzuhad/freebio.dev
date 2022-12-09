@@ -5,6 +5,7 @@ import Avatar from "../components/Avatar";
 import TextLink from "../components/TextLink";
 import SocialLink from "../components/SocialLink";
 import userData from "../data/default.json";
+import GitHubButton from "react-github-btn";
 
 const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 
@@ -34,10 +35,14 @@ const Home: NextPage = () => {
           </div>
           <h1 className="uppercase tracking-wide font-bold">{name}</h1>
           <p>{bio}</p>
-          <div className="flex gap-2 mt-2 items-center">
+          <div className="flex gap-2 mt-2 items-center justify-center flex-wrap align-middle">
             {socials?.map(({ icon, href }) => (
               <SocialLink key={icon} icon={icon} href={href} />
             ))}
+            {/* <!-- Place this tag where you want the button to render. --> */}
+            <div className="mt-2">
+            <GitHubButton href="https://github.com/syofyanzuhad/freebio.dev" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star syofyanzuhad/freebio.dev on GitHub">Star</GitHubButton>
+            </div>
           </div>
         </section>
         <section className="flex flex-col items-center my-8">
