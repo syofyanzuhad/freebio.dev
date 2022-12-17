@@ -41,3 +41,28 @@ export function getAllUsers(fields: string[] = []) {
 
 	return usersData;
 }
+
+export function getPathsObject() {
+	const users = getUsers();
+	const paths = users.map((user) => {
+		return {
+			username: user.replace(/\.json$/, ''),
+			// get last modified date
+			lastMod: fs.statSync(join('src/data', user)).mtime.getTime(),
+		};
+	});
+
+	return paths;
+};
+
+export function formatDate(date: string | number | Date) {
+  var d = new Date(date),
+    month = "" + (d.getMonth() + 1),
+    day = "" + d.getDate(),
+    year = d.getFullYear();
+
+  if (month.length < 2) month = "0" + month;
+  if (day.length < 2) day = "0" + day;
+
+  return [year, month, day].join("-");
+};
