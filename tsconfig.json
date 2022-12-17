@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/sitemap.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/api/sitemap.js"],
   "exclude": ["node_modules"]
 }

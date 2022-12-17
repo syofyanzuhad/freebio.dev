@@ -1,6 +1,6 @@
 import { getPathsObject, formatDate } from "../../utils/api";
 
-export default function handler(req: any, res: { statusCode: number; setHeader: (arg0: string, arg1: string) => void; end: (arg0: string) => void; }) {
+export default function handler(req, res) {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/xml");
 
