@@ -61,7 +61,6 @@ const Avatar = ({
 
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       <link rel="icon" href="/favicon.ico" />
-      <script async src="https://cdn.splitbee.io/sb.js"></script>
     </Head>
   );
 };
