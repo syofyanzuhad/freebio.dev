@@ -27,23 +27,27 @@
 		}
 	],
 	"links": [
-		{
+		{{
 			"id": 1,
 			"href": "https://syofyan-profile.vercel.app/",
 			"title": "Web Profile"
 		},
-		{
 			"id": 2,
+			"href": "https://libur-hari-ini.vercel.app/",
+			"title": "Cek Libur Hari Ini"
+		},
+		{
+			"id": 3,
 			"href": "https://showwcase.com/syofyanzuhad",
 			"title": "Connect me on Showwcase"
 		},
 		{
-			"id": 3,
+			"id": 4,
 			"href": "https://syofyanzuhad.medium.com/",
 			"title": "Read my blog"
 		},
 		{
-			"id": 4,
+			"id": 5,
 			"href": "https://www.buymeacoffee.com/syofyanzuhad",
 			"title": "Buy me a coffee"
 		}
