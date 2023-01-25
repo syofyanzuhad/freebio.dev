@@ -27,7 +27,7 @@
 		}
 	],
 	"links": [
-		{{
+		{
 			"id": 1,
 			"href": "https://syofyan-profile.vercel.app/",
 			"title": "Web Profile"
