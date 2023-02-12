@@ -1,0 +1,31 @@
+{
+	"username": "kelas-akhir-pekan",
+	"name": "Kelas Akhir Pekan",
+	"bio": "Belajar skill baru, tiap akhir pekan!",
+	"description": "Kelas Akhir Pekan - Education Platform",
+	"avatar_url": "https://github.com/kelas-akhir-pekan.png",
+	"socials": [
+		{
+			"name": "instagram",
+			"href": "https://www.instagram.com/kelasakhirpekan.official",
+			"icon": "ig"
+		},
+		{
+			"name": "discord",
+			"href": "https://discord.gg/sehvgpcA",
+			"icon": "dc"
+		}
+	],
+	"links": [
+		{
+			"id": 1,
+			"href": "https://sites.google.com/view/kelas-akhir-pekan",
+			"title": "Official Website"
+		},
+		{
+			"id": 2,
+			"href": "https://github.com/kelas-akhir-pekan",
+			"title": "Github Organization"
+		}
+	]
+}
