@@ -4,6 +4,7 @@ import Avatar from "../components/Avatar";
 import TextLink from "../components/TextLink";
 import SocialLink from "../components/SocialLink";
 import { getAllUsers, getByUsername } from "../utils/api";
+import Navbar from "../components/Navbar";
 
 export default function UserBio({ user }: any) {
   const { username, name, avatar_url, bio, description, socials, links } = user;
@@ -23,19 +24,24 @@ export default function UserBio({ user }: any) {
 
       <main className={container}>
         <section className="flex flex-col items-center pt-16">
-          <div>
+          <Navbar name={name} username={username} />
+          <div className="mt-3">
             <Avatar url={avatar_url} alt="avatar" />
           </div>
           <h1 className="uppercase tracking-wide font-bold">{name}</h1>
           <p>{bio}</p>
           <div className="flex gap-2 mt-2 items-center">
-            <SocialLink key="gh" icon="gh" href={`https://github.com/${username}`} />
+            <SocialLink
+              key="gh"
+              icon="gh"
+              href={`https://github.com/${username}`}
+            />
             {socials?.map(({ icon, href }: any) => (
               <SocialLink key={icon} icon={icon} href={href} />
             ))}
           </div>
         </section>
-        <section className="flex flex-col items-center my-8">
+        <section className="flex flex-col items-center my-5">
           {links?.map(({ id, title, href }: any) => (
             <TextLink key={id} title={title} href={href} />
           ))}
