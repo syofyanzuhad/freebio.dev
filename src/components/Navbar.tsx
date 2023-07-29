@@ -107,7 +107,7 @@ const Navbar = ({ name, username }: any) => {
 
   return (
     <nav
-      className={`bg-white bg-opacity-10 backdrop-blur-md backdrop-filter w-full rounded-full max-w-[80vw] sticky top-10 z-10 transition-all duration-300 ease-in-out
+      className={`bg-white bg-opacity-10 backdrop-blur-md backdrop-filter w-full rounded-full sticky top-10 z-10 transition-all duration-300 ease-in-out
       `}
     >
       <div
