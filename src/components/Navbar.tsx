@@ -118,7 +118,7 @@ const Navbar = ({ name, username = '' }: any) => {
         {/* Your Navbar content here */}
         <div>
           <button
-            className="text-2xl font-bold hover:bg-slate-500 rounded-full p-1"
+            className="text-2xl font-bold hover:bg-slate-500 rounded-full p-2"
             onClick={toggleDetailsMenu}
           >
             <RiMoreFill />
@@ -149,7 +149,7 @@ const Navbar = ({ name, username = '' }: any) => {
         </div>
         <div>
           <button
-            className="ml-auto text-2xl font-bold hover:bg-gray-400 rounded-full p-2"
+            className="ml-auto text-2xl font-bold hover:bg-slate-500 rounded-full p-2"
             onClick={toggleShareMenu}
           >
             <RiShareLine />
