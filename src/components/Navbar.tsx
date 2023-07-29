@@ -9,6 +9,7 @@ import {
   RiWhatsappFill,
   RiMoreFill,
   RiShareLine,
+  RiShareBoxLine,
 } from "react-icons/ri";
 import { BiStats } from "react-icons/bi";
 import Link from "next/link";
@@ -118,6 +119,8 @@ const Navbar = ({ name, username = '' }: any) => {
         {/* Your Navbar content here */}
         <div>
           <button
+            id="detailsButton"
+            aria-label="More details"
             className="text-2xl font-bold hover:bg-slate-500 rounded-full p-2"
             onClick={toggleDetailsMenu}
           >
@@ -127,7 +130,11 @@ const Navbar = ({ name, username = '' }: any) => {
             <div className="bg-gray-500 bg-opacity-70 backdrop-blur-md backdrop-filter absolute left-0 top-12 mt-3 rounded-lg p-3">
               <ul>
                 <li>
-                  <button className="text-gray300 hover:text-gray-400 block p-2">
+                  <button
+                    id="statButton"
+                    aria-label="Visitor Stats"
+                    className="text-gray300 hover:text-gray-400 block p-2"
+                  >
                     <Link
                       href={`https://app.splitbee.io/public/freebio.dev?filter=%7B"page"%3A"%2F${username}%22%7D`}
                     >
@@ -135,6 +142,19 @@ const Navbar = ({ name, username = '' }: any) => {
                         <BiStats className="inline-block mr-1 -mt-1 text-xl" />
                         Visitor Stats
                       </a>
+                    </Link>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    id="createButton"
+                    aria-label="Create your own bio"
+                    className="text-gray300 hover:text-gray-400 block p-2"
+                  >
+                    <Link href={`https://freebio.dev/create`}>
+                      <a>
+                        <RiShareBoxLine className="inline-block mr-1 -mt-1 text-xl" />
+                        Create your own bio</a>
                     </Link>
                   </button>
                 </li>
@@ -149,6 +169,8 @@ const Navbar = ({ name, username = '' }: any) => {
         </div>
         <div>
           <button
+            id="shareButton"
+            aria-label="Share this page"
             className="ml-auto text-2xl font-bold hover:bg-slate-500 rounded-full p-2"
             onClick={toggleShareMenu}
           >
@@ -159,6 +181,8 @@ const Navbar = ({ name, username = '' }: any) => {
               <ul>
                 <li>
                   <button
+                    id="facebookButton"
+                    aria-label="Share on Facebook"
                     onClick={() => sharePage("facebook")}
                     className="text-gray300 hover:text-gray-400 block w-full text-left"
                   >
@@ -177,6 +201,8 @@ const Navbar = ({ name, username = '' }: any) => {
                 </li> */}
                 <li>
                   <button
+                    id="twitterButton"
+                    aria-label="Share on Twitter"
                     onClick={() => sharePage("twitter")}
                     className="text-gray300 hover:text-gray-400 block w-full text-left mt-3"
                   >
@@ -186,6 +212,8 @@ const Navbar = ({ name, username = '' }: any) => {
                 </li>
                 <li>
                   <button
+                    id="linkedinButton"
+                    aria-label="Share on LinkedIn"
                     onClick={() => sharePage("linkedin")}
                     className="text-gray300 hover:text-gray-400 block w-full text-left mt-3"
                   >
@@ -195,6 +223,8 @@ const Navbar = ({ name, username = '' }: any) => {
                 </li>
                 <li>
                   <button
+                    id="telegramButton"
+                    aria-label="Share on Telegram"
                     onClick={() => sharePage("telegram")}
                     className="text-gray300 hover:text-gray-400 block w-full text-left mt-3"
                   >
@@ -204,6 +234,8 @@ const Navbar = ({ name, username = '' }: any) => {
                 </li>
                 <li>
                   <button
+                    id="whatsappButton"
+                    aria-label="Share on WhatsApp"
                     onClick={() => sharePage("whatsapp")}
                     className="text-gray300 hover:text-gray-400 block w-full text-left mt-3"
                   >
