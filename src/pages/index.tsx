@@ -6,6 +6,7 @@ import TextLink from "../components/TextLink";
 import SocialLink from "../components/SocialLink";
 import userData from "../data/default.json";
 import GitHubButton from "react-github-btn";
+import Navbar from "../components/Navbar";
 
 const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 
@@ -30,7 +31,8 @@ const Home: NextPage = () => {
 
       <main className={container}>
         <section className="flex flex-col items-center pt-16">
-          <div>
+          <Navbar name={name} />
+          <div className="mt-3">
             <Avatar url={avatar_url} alt="avatar" />
           </div>
           <h1 className="uppercase tracking-wide font-bold">{name}</h1>
@@ -41,11 +43,20 @@ const Home: NextPage = () => {
             ))}
             {/* <!-- Place this tag where you want the button to render. --> */}
             <div className="mt-2">
-            <GitHubButton href="https://github.com/syofyanzuhad/freebio.dev" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star syofyanzuhad/freebio.dev on GitHub">Star</GitHubButton>
+              <GitHubButton
+                href="https://github.com/syofyanzuhad/freebio.dev"
+                data-color-scheme="no-preference: light; light: light; dark: dark;"
+                data-icon="octicon-star"
+                data-size="large"
+                data-show-count="true"
+                aria-label="Star syofyanzuhad/freebio.dev on GitHub"
+              >
+                Star
+              </GitHubButton>
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center my-8">
+        <section className="flex flex-col items-center my-5">
           {links?.map(({ id, title, href }) => (
             <TextLink key={id} title={title} href={href} />
           ))}

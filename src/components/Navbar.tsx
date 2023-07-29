@@ -14,10 +14,11 @@ import { BiStats } from "react-icons/bi";
 import Link from "next/link";
 
 interface INavbar {
-  name: any;
+  name: string;
+  username: string;
 }
 
-const Navbar = ({ name, username }: any) => {
+const Navbar = ({ name, username = '' }: any) => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   const [showShareMenu, setShowShareMenu] = useState(false);
@@ -126,7 +127,7 @@ const Navbar = ({ name, username }: any) => {
             <div className="bg-gray-500 bg-opacity-70 backdrop-blur-md backdrop-filter absolute left-0 top-12 mt-3 rounded-lg p-3">
               <ul>
                 <li>
-                  <button className="text-gray300 hover:text-gray-400 block w-full text-left">
+                  <button className="text-gray300 hover:text-gray-400 block p-2">
                     <Link
                       href={`https://app.splitbee.io/public/freebio.dev?filter=%7B"page"%3A"%2F${username}%22%7D`}
                     >
@@ -148,7 +149,7 @@ const Navbar = ({ name, username }: any) => {
         </div>
         <div>
           <button
-            className="ml-auto text-2xl font-bold"
+            className="ml-auto text-2xl font-bold hover:bg-gray-400 rounded-full p-2"
             onClick={toggleShareMenu}
           >
             <RiShareLine />
