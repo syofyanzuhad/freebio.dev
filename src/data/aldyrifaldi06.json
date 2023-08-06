@@ -1,0 +1,61 @@
+{
+	"username": "aldyrifaldi06",
+	"name": "Aldy Rifaldi.B",
+	"bio": "Full Stack Developer",
+	"description": "Open for new projects, discussion and coffee",
+	"avatar_url": "https://github.com/aldyrifaldi06.png",
+	"socials": [
+		{
+			"name": "twitter",
+			"href": "https://twitter.com/aldyrifaldi06",
+			"icon": "tw"
+		},
+		{
+			"name": "linkedin",
+			"href": "https://www.linkedin.com/in/aldyrifaldi06",
+			"icon": "li"
+		},
+		{
+			"name": "telegram",
+			"href": "https://t.me/aldyrifaldi06",
+			"icon": "tg"
+		},
+		{
+			"name": "mail",
+			"href": "mailto:aldyrifaldi060621@gmail.com",
+			"icon": "mail"
+		}
+	],
+	"links": [
+		{
+			"id": 1,
+			"href": "/404",
+			"title": "On Progress"
+		},
+		{
+			"id": 2,
+			"href": "https://app.splitbee.io/public/freebio.dev",
+			"title": "Visitor Stats"
+		},
+		{
+			"id": 3,
+			"href": "/aldyrifaldi06",
+			"title": "Self Employed"
+		},
+		{
+			"id": 4,
+			"href": "https://www.buymeacoffee.com/aldyrifaldi06",
+			"title": "Buy me a coffee"
+		},
+		{
+			"id": 5,
+			"href": "https://trakteer.id/aldyrifaldi06/tip",
+			"title": "Trakteer me"
+		},
+		{
+			"id": 6,
+			"href": "/donate",
+			"title": "Donate"
+		}
+	]
+}
