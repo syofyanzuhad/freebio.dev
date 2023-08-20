@@ -83,7 +83,7 @@ export async function getStaticProps({ params }: any) {
 
   // get theme json from file
   user.theme = getUserTheme(user.theme);
-  console.log(user.theme, "userTheme");
+  // console.log(user.theme, "userTheme");
 
 
   if (!user?.name) return {};
