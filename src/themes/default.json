@@ -1,0 +1,9 @@
+{
+    "background": "/neon.jpeg",
+    "backgroundUrl": "https://i.imgur.com/5Xyv0QH.jpeg",
+    "backgroundColor": "white",
+    "textColor": "#CEEDFF",
+    "rounded": "full",
+    "style": "shadow",
+    "styleColor": "green"
+}

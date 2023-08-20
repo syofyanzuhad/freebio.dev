@@ -1,6 +1,24 @@
 import fs from 'fs';
 import { join } from 'path';
 
+export function getUserTheme(theme: string) {
+	// const userTheme = theme.replace(/\.json$/, '');
+	// console.log(userTheme, 'userTheme');
+	let fullPath = '';
+
+	fullPath = join('src/themes', `${theme}.json`);
+
+	try {
+		const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+		const data = JSON.parse(fileContents);
+
+		return data;
+	} catch {
+		return null;
+	}
+}
+
 export function getUsers() {
     let dir = join(process.cwd(), 'src/data');
 

@@ -17,9 +17,12 @@ import Link from "next/link";
 interface INavbar {
   name: string;
   username: string;
+  backgroundColor: string;
+  textColor: string;
+  navClass?: string;
 }
 
-const Navbar = ({ name, username = '' }: any) => {
+const Navbar = ({ name, username, backgroundColor, textColor, navClass }: any) => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   const [showShareMenu, setShowShareMenu] = useState(false);
@@ -109,8 +112,7 @@ const Navbar = ({ name, username = '' }: any) => {
 
   return (
     <nav
-      className={`bg-white bg-opacity-10 backdrop-blur-md backdrop-filter w-full rounded-full sticky top-10 z-10 transition-all duration-300 ease-in-out
-      `}
+      className={navClass}
     >
       <div
         className="container mx-auto h-full flex items-center justify-between px-4 py-3"
@@ -127,13 +129,13 @@ const Navbar = ({ name, username = '' }: any) => {
             <RiMoreFill />
           </button>
           {showDetailsMenu && (
-            <div className="bg-gray-500 bg-opacity-70 backdrop-blur-md backdrop-filter absolute left-0 top-12 mt-3 rounded-lg p-3">
+            <div className={`bg-${backgroundColor} bg-opacity-20 backdrop-blur-md backdrop-filter absolute left-0 top-12 mt-3 rounded-lg p-3`}>
               <ul>
                 <li>
                   <button
                     id="statButton"
                     aria-label="Visitor Stats"
-                    className="text-gray300 hover:text-gray-400 block p-2"
+                    className={`text-${textColor}-300 hover:text-gray-400 block`}
                   >
                     <Link
                       href={`https://app.splitbee.io/public/freebio.dev?filter=%7B"page"%3A"%2F${username}%22%7D`}
@@ -149,7 +151,7 @@ const Navbar = ({ name, username = '' }: any) => {
                   <button
                     id="createButton"
                     aria-label="Create your own bio"
-                    className="text-gray300 hover:text-gray-400 block p-2"
+                    className={`text-${textColor}-300 hover:text-gray-400 block mt-2`}
                   >
                     <Link href={`https://freebio.dev/create`}>
                       <a>
@@ -177,14 +179,14 @@ const Navbar = ({ name, username = '' }: any) => {
             <RiShareLine />
           </button>
           {showShareMenu && (
-            <div className="bg-gray-500 bg-opacity-70 backdrop-blur-md backdrop-filter absolute right-0 top-12 mt-3 rounded-lg p-3">
-              <ul>
+            <div className={`bg-${backgroundColor} bg-opacity-20 backdrop-blur-md backdrop-filter absolute right-0 top-12 mt-3 rounded-lg p-3`}>
+            <ul>
                 <li>
                   <button
                     id="facebookButton"
                     aria-label="Share on Facebook"
                     onClick={() => sharePage("facebook")}
-                    className="text-gray300 hover:text-gray-400 block w-full text-left"
+                    className={`text-${textColor}-300 hover:text-gray-400 block w-full text-left`}
                   >
                     <RiFacebookCircleFill className="inline-block mr-1 -mt-1 text-xl" />
                     Share on Facebook
@@ -193,7 +195,7 @@ const Navbar = ({ name, username = '' }: any) => {
                 {/* <li>
                   <button
                     onClick={() => sharePage("instagram")}
-                    className="text-gray300 hover:text-gray-400 block w-full text-left mt-1"
+                    className={`text-${textColor}-300 hover:text-gray-400 block w-full text-left mt-1`}
                   >
                     <RiInstagramFill className="inline-block mr-1 -mt-1 text-xl" />
                     Share on Instagram
@@ -204,7 +206,7 @@ const Navbar = ({ name, username = '' }: any) => {
                     id="twitterButton"
                     aria-label="Share on Twitter"
                     onClick={() => sharePage("twitter")}
-                    className="text-gray300 hover:text-gray-400 block w-full text-left mt-3"
+                    className={`text-${textColor}-300 hover:text-gray-400 block w-full text-left mt-3`}
                   >
                     <RiTwitterFill className="inline-block mr-1 -mt-1 text-xl" />
                     Share on Twitter
@@ -215,7 +217,7 @@ const Navbar = ({ name, username = '' }: any) => {
                     id="linkedinButton"
                     aria-label="Share on LinkedIn"
                     onClick={() => sharePage("linkedin")}
-                    className="text-gray300 hover:text-gray-400 block w-full text-left mt-3"
+                    className={`text-${textColor}-300 hover:text-gray-400 block w-full text-left mt-3`}
                   >
                     <RiLinkedinFill className="inline-block mr-1 -mt-1 text-xl" />
                     Share on LinkedIn
@@ -226,7 +228,7 @@ const Navbar = ({ name, username = '' }: any) => {
                     id="telegramButton"
                     aria-label="Share on Telegram"
                     onClick={() => sharePage("telegram")}
-                    className="text-gray300 hover:text-gray-400 block w-full text-left mt-3"
+                    className={`text-${textColor}-300 hover:text-gray-400 block w-full text-left mt-3`}
                   >
                     <RiTelegramFill className="inline-block mr-1 -mt-1 text-xl" />
                     Share on Telegram
@@ -237,7 +239,7 @@ const Navbar = ({ name, username = '' }: any) => {
                     id="whatsappButton"
                     aria-label="Share on WhatsApp"
                     onClick={() => sharePage("whatsapp")}
-                    className="text-gray300 hover:text-gray-400 block w-full text-left mt-3"
+                    className={`text-${textColor}-300 hover:text-gray-400 block w-full text-left mt-3`}
                   >
                     <RiWhatsappFill className="inline-block mr-1 -mt-1 text-xl" />
                     Share on WhatsApp
