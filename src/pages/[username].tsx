@@ -25,8 +25,8 @@ export default function UserBio({ user }: any) {
 			styleText = `bg-${theme.styleColor}-500`;
 			break;
 	}
-  const navClass = `bg-${theme.backgroundColor} bg-opacity-10 backdrop-blur-md backdrop-filter w-full rounded-${theme.rounded} sticky top-10 z-10 transition-all duration-300 ease-in-out`;
-	const textClass = `my-4 p-4 flex justify-center cursor-pointer items-center ${styleText} backdrop-blur-3xl w-full min-h-12 opacity-80 rounded-${theme.rounded} md:hover:-translate-y-0 md:hover:scale-110 duration-700 ease-in-out`;
+  const navClass = `bg-${theme.backgroundColor ?? "white"} bg-opacity-10 backdrop-blur-md backdrop-filter w-full rounded-${theme.rounded ?? 'full'} sticky top-10 z-10 transition-all duration-300 ease-in-out`;
+	const textClass = `my-4 p-4 flex justify-center cursor-pointer items-center ${styleText} backdrop-blur-3xl w-full min-h-12 opacity-80 rounded-${theme.rounded ?? 'full'} md:hover:-translate-y-0 md:hover:scale-110 duration-700 ease-in-out`;
 
   return (
     <div className={mainClass}>
