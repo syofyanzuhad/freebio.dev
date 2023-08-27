@@ -7,6 +7,8 @@ import SocialLink from "../components/SocialLink";
 import userData from "../data/default.json";
 import GitHubButton from "react-github-btn";
 import Navbar from "../components/Navbar";
+import Offline from "../components/Offline";
+import useOfflineStatus from "../hooks/useOfflineStatus";
 
 const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 
@@ -19,6 +21,8 @@ const links = userData.links;
 // console.log(userData);
 
 const Home: NextPage = () => {
+  const offlineStatus = useOfflineStatus();
+  
 
   const container = "md:container md:mx-auto lg:max-w-4xl px-4";
   const mainClass = `bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/neon.jpeg')] h-full min-h-screen text-[#CEEDFF]`;
@@ -48,6 +52,7 @@ const Home: NextPage = () => {
       />
 
       <main className={container}>
+        {offlineStatus && <Offline />}
         <section className="flex flex-col items-center pt-16">
           <Navbar name={name} username={name} backgroundColor="white" textColor="#CEEDFF" rounded="full" navClass={navClass} textClass={textClass} />
           <div className="mt-3">

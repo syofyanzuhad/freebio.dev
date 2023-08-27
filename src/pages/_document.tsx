@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -12,13 +13,13 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script async src="https://cdn.splitbee.io/sb.js"></script>
-          <script
+        <Script src="https://cdn.splitbee.io/sb.js" />
+          <Script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           />
-          <script
-            // eslint-disable-next-line react/no-danger
+          <Script
+            id="GA_MEASUREMENT_ID"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
