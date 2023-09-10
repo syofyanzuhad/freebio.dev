@@ -13,12 +13,11 @@ import {
 } from "react-icons/ri";
 
 interface ITextLink extends Pick<LinkProps, "href"> {
-    key: string;
     icon: string;
     href: string;
 }
 
-const SocialLink = ({ href, key, icon }: ITextLink) => {
+const SocialLink = ({ href, icon }: ITextLink) => {
 	return (
         <Link href={href} passHref>
             <a target="_blank" aria-label="social-link" rel="noreferrer">

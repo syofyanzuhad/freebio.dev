@@ -9,7 +9,9 @@ import GitHubButton from "react-github-btn";
 import Navbar from "../components/Navbar";
 import Offline from "../components/Offline";
 import useOfflineStatus from "../hooks/useOfflineStatus";
+import splitbee from "@splitbee/web";
 
+splitbee.init()
 const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 
 const name = userData.name;
@@ -22,7 +24,6 @@ const links = userData.links;
 
 const Home: NextPage = () => {
   const offlineStatus = useOfflineStatus();
-  
 
   const container = "md:container md:mx-auto lg:max-w-4xl px-4";
   const mainClass = `bg-cover bg-center bg-no-repeat bg-fixed bg-[url('/neon.jpeg')] h-full min-h-screen text-[#CEEDFF]`;
