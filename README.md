@@ -8,7 +8,7 @@
 
 <p align='center'>
   <a href='https://github.com/syofyanzuhad/freebio.dev'>
-	  <img src='https://visitor-badge.glitch.me/badge?page_id=syofyanzuhad.freebio.dev'>
+	  <img src='https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2Fsyofyanzuhad%2Ffreebiodev.json%3Fcolor%3Dpurple'>
 	</a>
 	<a href="https://github.com/syofyanzuhad/freebio.dev/pulls">
 		<img src="https://img.shields.io/github/issues-pr/syofyanzuhad/freebio.dev" alt="Pull Requests Badge"/>
