@@ -128,6 +128,11 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ### 3. **Finally, send it as Pull-request to the main repo.**
 
+## Stats:
+
+![Alt](https://repobeats.axiom.co/api/embed/ddff54ee33cc1e308f01a17d131254191159fa73.svg "Repobeats analytics image")
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
