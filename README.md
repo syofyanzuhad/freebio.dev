@@ -8,7 +8,7 @@
 
 <p align='center'>
   <a href='https://github.com/syofyanzuhad/freebio.dev'>
-	  <img src='https://visitor-badge.glitch.me/badge?page_id=syofyanzuhad.freebio.dev'>
+	  <img src='https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2Fsyofyanzuhad%2Ffreebiodev.json%3Fcolor%3Dpurple'>
 	</a>
 	<a href="https://github.com/syofyanzuhad/freebio.dev/pulls">
 		<img src="https://img.shields.io/github/issues-pr/syofyanzuhad/freebio.dev" alt="Pull Requests Badge"/>
@@ -127,6 +127,11 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 
 ### 3. **Finally, send it as Pull-request to the main repo.**
+
+## Stats:
+
+![Alt](https://repobeats.axiom.co/api/embed/ddff54ee33cc1e308f01a17d131254191159fa73.svg "Repobeats analytics image")
+
 
 ## Learn More
 
