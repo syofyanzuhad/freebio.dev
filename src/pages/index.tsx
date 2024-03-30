@@ -9,9 +9,9 @@ import GitHubButton from "react-github-btn";
 import Navbar from "../components/Navbar";
 import Offline from "../components/Offline";
 import useOfflineStatus from "../hooks/useOfflineStatus";
-// import splitbee from "@splitbee/web";
+import splitbee from "@splitbee/web";
 
-// splitbee.init()
+splitbee.init()
 const container = "md:container md:mx-auto lg:max-w-4xl px-4";
 
 const name = userData.name;
