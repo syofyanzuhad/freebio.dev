@@ -1,0 +1,62 @@
+{
+	"theme": "default",
+	"username": "me",
+	"name": "Syofyan Zuhad",
+	"bio": "Web Artisan",
+	"description": "Syofyan Zuhad - Software Engineer",
+	"avatar_url": "https://secure.gravatar.com/avatar/66b4ab4b1c5ee1c71a5dbe20a4c438d9?s=500",
+	"socials": [
+		{
+			"name": "twitter",
+			"href": "https://twitter.com/syofyan_zuhad",
+			"icon": "tw"
+		},
+		{
+			"name": "instagram",
+			"href": "https://www.instagram.com/syofyan_zuhad",
+			"icon": "ig"
+		},
+		{
+			"name": "linkedin",
+			"href": "https://www.linkedin.com/in/syofyan-zuhad",
+			"icon": "li"
+		},
+		{
+			"name": "telegram",
+			"href": "https://t.me/syofyan_zuhad",
+			"icon": "tg"
+		}
+	],
+	"links": [
+		{
+			"id": 1,
+			"href": "https://syofyan-profile.vercel.app/",
+			"title": "Web Profile"
+		},
+		{
+			"id": 2,
+			"href": "https://libur-hari-ini.vercel.app/",
+			"title": "Cek Libur Hari Ini"
+		},
+		{
+			"id": 3,
+			"href": "https://adplist.org/mentors/syofyan-zuhad?session=9027-general-mentorship",
+			"title": "Join 1:1 mentoring session for FREE"
+		},
+		{
+			"id": 4,
+			"href": "https://showwcase.com/syofyanzuhad",
+			"title": "Connect me on Showwcase"
+		},
+		{
+			"id": 5,
+			"href": "https://syofyanzuhad.medium.com/",
+			"title": "Read my blog"
+		},
+		{
+			"id": 6,
+			"href": "https://www.buymeacoffee.com/syofyanzuhad",
+			"title": "Buy me a coffee"
+		}
+	]
+}
